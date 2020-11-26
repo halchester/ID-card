@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() => runApp(MaterialApp(
     theme: ThemeData(fontFamily: 'Poppins'),
@@ -67,11 +68,28 @@ class IDcard extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 20),
             Row(
               children: [
                 Icon(
-                    Icons.email_rounded,
+                    Icons.phone,
+                  color: Colors.grey,
+                ),
+                SizedBox(width: 8,),
+                Text(
+                  "+9595505454",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 18,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 8,),
+            Row(
+              children: [
+                Icon(
+                  Icons.email_rounded,
                   color: Colors.grey,
                 ),
                 SizedBox(width: 8,),
@@ -83,7 +101,43 @@ class IDcard extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
+            SizedBox(height: 30,),
+            Text(
+              "Connect with me : ",
+              style: TextStyle(
+                color: Colors.grey,
+                fontSize: 18,
+              ),
+            ),
+            SizedBox(height: 12,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+              Icon(
+                  FontAwesomeIcons.facebook,
+                  color: Colors.blue[500],
+                  size: 30,
+                ),
+              SizedBox(width: 15),
+              Icon(
+                FontAwesomeIcons.instagram,
+                  color: Colors.white,
+                  size: 33,
+              ),
+              SizedBox(width: 15),
+              Icon(
+                FontAwesomeIcons.github,
+                  color: Colors.white,
+                  size: 33,
+              ),
+              SizedBox(width: 15),
+              Icon(
+                FontAwesomeIcons.twitter,
+                  color: Colors.blue[500],
+                  size: 33,
+              ),
+            ],)
           ],
         ),
       ),
