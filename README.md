@@ -1,6 +1,6 @@
 # id_card
 
-A new Flutter application.
+Very first app with flutter.
 
 ## Getting Started
 
